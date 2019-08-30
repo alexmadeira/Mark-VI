@@ -8,10 +8,10 @@ import { Container, Crooked } from './styles';
 export default function Home() {
   return (
     <Container>
-      {/* <Banner /> */}
-      {/* <Crooked> */}
-      <Projects limit={6} order="asc" simple />
-      {/* </Crooked> */}
+      <Banner />
+      <Crooked>
+        <Projects limit={6} order="asc" simple />
+      </Crooked>
     </Container>
   );
 }

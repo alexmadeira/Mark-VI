@@ -8,7 +8,6 @@ const entrada = keyframes`
 `;
 
 export const Container = styled.div`
-  overflow: hidden;
   border: 1px solid #000;
   flex: 1;
   margin-top: 15px;
@@ -40,34 +39,34 @@ export const Container = styled.div`
   }
 
   &:nth-child(9n + 1) {
-    width: calc(25% - 30px);
+    min-width: calc(25% - 30px);
   }
   &:nth-child(9n + 2) {
-    width: calc(50% - 30px);
+    min-width: calc(50% - 30px);
   }
   &:nth-child(9n + 3) {
-    width: calc(25% - 30px);
+    min-width: calc(25% - 30px);
   }
   &:nth-child(9n + 4) {
-    width: calc(50% - 30px);
+    min-width: calc(50% - 30px);
   }
   &:nth-child(9n + 5) {
-    width: calc(31.25% - 30px);
+    min-width: calc(31.25% - 30px);
   }
   &:nth-child(9n + 6) {
-    width: calc(18.75% - 30px);
+    min-width: calc(18.75% - 30px);
   }
   &:nth-child(9n + 7) {
-    width: calc(31.25% - 30px);
+    min-width: calc(31.25% - 30px);
   }
   &:nth-child(9n + 8) {
-    width: calc(25% - 30px);
+    min-width: calc(25% - 30px);
   }
   &:nth-child(9n + 9) {
-    width: calc(36% - 30px);
+    min-width: calc(36% - 30px);
   }
   @media (max-width: 960px) {
-    width: calc(100% - 30px) !important;
+    min-width: calc(100% - 30px) !important;
   }
   &.open {
     width: calc(100% - 30px) !important;
@@ -92,6 +91,7 @@ export const Container = styled.div`
     }
   }
 `;
+
 export const TitleBox = styled.div`
   z-index: 3;
   position: absolute;

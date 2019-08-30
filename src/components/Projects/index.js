@@ -9,6 +9,8 @@ export default function Projects() {
     <Container>
       <Project item="1" />
       <Project item="2" />
+      <Project item="3" />
+      <Project item="4" />
     </Container>
   );
 }

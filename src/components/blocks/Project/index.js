@@ -1,29 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-// import Title from '../Title';
+import Title from '../Title';
 import Image from '../Image';
 
-import {
-  Container,
-  Logo,
-  // TitleBox
-} from './styles';
+import { Container, Logo, TitleBox } from './styles';
 
 export default function Project({ item }) {
   return (
     <Container item={item}>
       <Image src="http://data.alexmadeira.com.br/files/alex-madeira-smiles-preview.jpg" />
       <Logo>
-        <a className="btn-default" href="#s">
+        <Link to="/projeto/st-marche">
           <img
             src="http://data.alexmadeira.com.br/files/alex-madeira-smiles-logo.png"
             alt="alex-madeira-smiles-logo.png"
           />
-        </a>
+        </Link>
       </Logo>
-      {/* <TitleBox>
+      <TitleBox>
         <Title>Smiles</Title>
-      </TitleBox> */}
+      </TitleBox>
 
       {/* <div className="DescriptionBox sc-cSHVUG lhwPHq">
         <h3 className="sc-chPdSV gTrfBz">
