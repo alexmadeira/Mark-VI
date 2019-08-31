@@ -4,13 +4,16 @@ import Project from '../blocks/Project';
 
 import { Container } from './styles';
 
-export default function Projects() {
+export default function Projects({ limit }) {
   return (
     <Container>
-      <Project item="1" />
-      <Project item="2" />
-      <Project item="3" />
-      <Project item="4" />
+      {(() => {
+        const rows = [];
+        for (let i = 0; i < limit; i++) {
+          rows.push(<Project item={i} key={i} />);
+        }
+        return rows;
+      })()}
     </Container>
   );
 }

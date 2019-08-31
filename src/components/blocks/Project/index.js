@@ -10,7 +10,7 @@ export default function Project({ item }) {
   return (
     <Container item={item}>
       <Image src="http://data.alexmadeira.com.br/files/alex-madeira-smiles-preview.jpg" />
-      <Logo>
+      <Logo className="logo">
         <Link to="/projeto/st-marche">
           <img
             src="http://data.alexmadeira.com.br/files/alex-madeira-smiles-logo.png"
@@ -18,7 +18,7 @@ export default function Project({ item }) {
           />
         </Link>
       </Logo>
-      <TitleBox>
+      <TitleBox className="title">
         <Title>Smiles</Title>
       </TitleBox>
 

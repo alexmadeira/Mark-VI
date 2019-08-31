@@ -40,21 +40,50 @@ export const Container = styled.div`
 
   &:nth-child(9n + 1) {
     min-width: calc(25% - 30px);
+    .logo {
+      left: initial;
+      right: 0;
+      top: initial;
+      bottom: 20px;
+    }
   }
   &:nth-child(9n + 2) {
     min-width: calc(50% - 30px);
   }
   &:nth-child(9n + 3) {
     min-width: calc(25% - 30px);
+    .title {
+      right: initial;
+      left: 0;
+    }
+    .logo {
+      bottom: 30px;
+      top: initial;
+      left: initial;
+    }
   }
   &:nth-child(9n + 4) {
-    min-width: calc(50% - 30px);
+    min-width: calc(33.33% - 30px);
+    .logo {
+      bottom: 30px;
+      top: initial;
+      left: 15%;
+    }
   }
   &:nth-child(9n + 5) {
-    min-width: calc(31.25% - 30px);
+    min-width: calc(33.33% - 30px);
   }
   &:nth-child(9n + 6) {
-    min-width: calc(18.75% - 30px);
+    min-width: calc(33.33% - 30px);
+    .title {
+      right: initial;
+      left: 0;
+    }
+    .logo {
+      bottom: 30px;
+      top: initial;
+      left: initial;
+    }
   }
   &:nth-child(9n + 7) {
     min-width: calc(31.25% - 30px);
@@ -98,6 +127,7 @@ export const TitleBox = styled.div`
   right: -5px;
   top: -20px;
   min-width: 200px;
+
   &.open {
     opacity: 0;
   }
@@ -108,7 +138,8 @@ export const TitleBox = styled.div`
 
 export const Logo = styled.div`
   position: absolute;
-  top: 100px;
+  top: 60px;
+  width: 40%;
   z-index: 3;
   transition: all 1s;
   transform: rotate(-25deg);
