@@ -12,6 +12,11 @@ export default createGlobalStyle`
      }
     body{
         -webkit-font-smoothing: antialiased!important;
+        text-rendering:optimizeLegibility!important;
+        background: #fff;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 16px;
+
         max-width:100vw;
         overflow-x:hidden;
 
